@@ -1,0 +1,112 @@
+body {
+    background:black;
+    background-image: url("./background.jpg");
+    background-size: cover;
+  }
+
+  .game-wrapper {
+    border-color:black;
+    border-style: solid;
+    border-radius: 25px;
+    width: 405px;
+    overflow: hidden;
+    margin:auto; /* aligns game to center of page */
+    transform: translateY(30%);
+  }
+  
+  .panel {
+    font-family:sans-serif;
+    background:rgba(200, 120, 34, .9);
+    color:rgba(255, 255, 255, 0.637);
+    margin-top:3px;
+    padding:3px;
+  }
+
+  
+/* These are the seperate DIVs inside the game  */
+
+/* Header: just the title of the game */
+  #header {
+    font-size:40px;
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:bold;
+    margin:-5px;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    border-bottom: solid 5px black;
+  }
+
+/* Rules: Explains what the player should do, and also the victory conditions */  
+  #rules {
+    text-align:justify;
+    border-top: solid 5px black;
+    margin-bottom:-5px;
+    margin-top: -5px;
+    border-bottom: solid 8px black;
+  }
+    #whatbeatswhat {
+      margin: auto;
+      font-weight:bold;
+      list-style-type:none;
+      text-align:center;
+      text-transform:uppercase;
+      background:rgba(104, 39, 39, 0.815);
+      width: 250px;
+      padding: 10px;
+      border: 2px;
+      border-style:solid;
+      border-color:black;
+      border-radius:25px;
+    }
+
+/* Player Choices: This is where the player will select their choice */
+  #player-choices {
+    background:firebrick;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    button {
+      height:100px;
+      width: 130px;
+      margin:0 5px;
+      font-size:20px;
+      text-align:center;
+      background:rgba(104, 39, 39, 0.815);
+      color: white;
+      font-weight:bolder;
+      border-radius:50%;
+      border-color:rgba(160, 104, 45, 0.671);
+    }
+ #results{
+  border-top: solid 5px black;
+  margin-top: -3px;
+  height: 115px;
+  text-align: left;
+ }
+
+  h2 {
+    margin:0;
+    color:white;
+    -webkit-text-stroke: 1px black;
+    float:right;
+  }
+
+  .score {
+    text-align: left !important;
+    font-weight: bolder;
+    color:white;
+    font-size: 2em;
+  }
+
+  .results-message {
+    font-size: 42px;
+    float:right;
+    font-weight: bolder;
+    color: white;
+  }
+
+  .tied-games {
+    float: right;
+  }
