@@ -1,0 +1,27 @@
+/* Reset default margin and padding for the page */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Create the flexbox grid container */
+.match-game-board {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black; /* Add a border to visualize the container */
+    margin:25px auto;
+    height:100%;
+}
+
+/* Style the individual grid cells */
+.game-board-square {
+    width: 100px; /* 8 columns, minus 5px for spacing */
+    height: 100px; /* 16 rows */
+    background-color: darkolivegreen;
+    margin: 2.5px; /* 5px spacing between cells, divided by 2 for both sides */
+    box-sizing: border-box; /* Include the margin in the width calculation */
+}
+
+.game-space {
+    background-color: blue;
+}
