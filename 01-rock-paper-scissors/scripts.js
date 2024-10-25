@@ -4,6 +4,7 @@ const choices = ['lapis','papyrus','scallpulus']
 const resultsMsgWin='You win'
 const resultsMsgLose='You lose'
 const resultsMsgTie="It's a tie"
+const resultsMsg=""
 // variable - RNG
 let computerChoice = choices[Math.floor(Math.random()*choices.length)]
 // variable - Int
