@@ -67,7 +67,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-    button {
+    #lapis, #papyrus, #scallpulus {
       height:100px;
       width: 130px;
       margin:0 5px;
@@ -109,4 +109,9 @@ body {
 
   .tied-games {
     float: right;
+  }
+
+  #reset {
+    color: pink;
+    background-color: rgba(104, 39, 39, 0.815);
   }
