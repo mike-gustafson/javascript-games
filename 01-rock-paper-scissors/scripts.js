@@ -1,10 +1,12 @@
 //------------------------------------------------------------------------Begin Variable Declaration
 // variable - string
 const choices = ['lapis','papyrus','scallpulus']
-const resultsMsgWin='You win'
-const resultsMsgLose='You lose'
-const resultsMsgTie="It's a tie"
-const resultsMsg=""
+const results={
+    win: 'You win',
+    lose: 'You lose',
+    tie: "It's a tie"
+}
+let resultsMsg=""
 // variable - RNG
 let computerChoice = choices[Math.floor(Math.random()*choices.length)]
 // variable - Int
@@ -29,16 +31,16 @@ let playerWins = ''
 // function - Logic for rock paper scissors
 function compareChoices(){
     if (playerChoice===computerChoice){                                 // checks for tie
-        resultsMsg=resultsMsgTie;                                       // create tie string if round is a tie
+        resultsMsg = results.tie;                                       // create tie string if round is a tie
         tiePoints++                                                     // increments counter for tied games
     }else{
         playerWins = resultsObject[playerChoice][computerChoice];       // set result to boolean value from messages object
         if (playerWins){                                                // if result = true (win)
             playerPoints++                                              // awards player a point
-            resultsMsg = resultsMsgWin                                  // creates victory string
+            resultsMsg = results.win                                  // creates victory string
         }else{                                                          // if result = false (loss)
             computerPoints++                                            // award computer a point
-            resultsMsg=resultsMsgLose                                   // creates loss string
+            resultsMsg = results.lose                                   // creates loss string
         }
     }
     outputToHTML()                                                      // calls outputToHTML function
